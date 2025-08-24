@@ -1,0 +1,24 @@
+services:
+  blu-node:
+    container_name: blu-node
+    image: ghcr.io/blu-whale/blu-node
+    restart: always
+    environment:
+      - CONFIG_FILE_PATH=/app/conf.yaml
+    env_file:
+      - .env
+    volumes:
+      - ./conf/config.yaml:/app/conf.yaml
+      - ./logs:/app/logs
+      - .data:/app/data
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "10"
+    networks:
+      - blu-node
+
+networks:
+  blu-node:
+    driver: bridge

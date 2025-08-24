@@ -1,0 +1,11 @@
+app:
+  contractAddress: '0x3fbb4dfa4cb8b26478d27fd89f59e8d91a39a7e6'
+  privateKey: ''
+  rpcUrl: 'https://oceanum-testnet.rpc.caldera.xyz/http'
+  dataPath: './data'
+  ipfsGateway: 'https://prod-common-api.bluwhale.com'
+
+logger:
+  level: info
+  maxFiles: 31
+  enableConsole: true
