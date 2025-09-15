@@ -1,6 +1,15 @@
 ## BluWhale node
 
-### requirements
+### Hardware requirements
+- CPU: Dual-core processor or higher
+- RAM: 2GB or more
+- Storage: At least 10GB free space
+- Internet: Stable connection (5Mbps+ upload/download)
+- OS: Windows 10+, macOS 11+, or Linux (Ubuntu 20.04+)
+- Note: Higher specs may improve node performance and reward stability.
+
+
+### Environment requirements
 - docker
 - docker-compose
 - git
