@@ -1,7 +1,8 @@
 ## BluWhale node
 > Please make sure you have enough gas, [faucet](https://oceanum-testnet.hub.caldera.xyz/)
 
-### [Get some gas](https://oceanum-testnet.hub.caldera.xyz/)
+### [Get some gas](https://oceanum-testnet.hub.caldera.xyz/): 
+https://oceanum-testnet.hub.caldera.xyz/
 ![faucet.png](assets/faucet.png)
 
 ### Hardware requirements
