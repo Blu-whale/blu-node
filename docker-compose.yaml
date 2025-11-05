@@ -7,6 +7,7 @@ services:
       - CONFIG_FILE_PATH=/app/conf.yaml
     volumes:
       - ./conf/config.yaml:/app/conf.yaml
+      - ./logs/:/app/logs/
     command: ["./main","-c", "/app/conf.yaml"]
     logging:
       driver: "json-file"
