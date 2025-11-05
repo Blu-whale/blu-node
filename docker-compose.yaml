@@ -5,12 +5,9 @@ services:
     restart: always
     environment:
       - CONFIG_FILE_PATH=/app/conf.yaml
-    env_file:
-      - .env
     volumes:
       - ./conf/config.yaml:/app/conf.yaml
-      - ./logs:/app/logs
-      - .data:/app/data
+    command: ["./main","-c", "/app/conf.yaml"]
     logging:
       driver: "json-file"
       options:

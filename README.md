@@ -1,9 +1,4 @@
 ## BluWhale node
-> Please make sure you have enough gas, [faucet](https://oceanum-testnet.hub.caldera.xyz/)
-
-### [Get some gas](https://oceanum-testnet.hub.caldera.xyz/): 
-https://oceanum-testnet.hub.caldera.xyz/
-![faucet.png](assets/faucet.png)
 
 ### Hardware requirements
 - CPU: Dual-core processor or higher
@@ -12,7 +7,6 @@ https://oceanum-testnet.hub.caldera.xyz/
 - Internet: Stable connection (5Mbps+ upload/download)
 - OS: Windows 10+, macOS 11+, or Linux (Ubuntu 20.04+)
 - Note: Higher specs may improve node performance and reward stability.
-
 
 ### Environment requirements
 - docker
@@ -32,15 +26,14 @@ docker-compose up -d
 ### config file explanation
 ```yaml
 app:
-  contractAddress: '0x3fbb4dfa4cb8b26478d27fd89f59e8d91a39a7e6'   # heartbeat contract address
-  privateKey: ''                                                  # your evm private key
-  rpcUrl: 'https://oceanum-testnet.rpc.caldera.xyz/http'          # rpc url of bluWhale chain
-  dataPath: './data'                                              # path to store data
-  ipfsGateway: 'https://prod-common-api.bluwhale.com'             # ipfs gateway url(eg:https://ipfs.io), https://prod-common-api.bluwhale.com is recommended,faster than ipfs.io
+  privateKey: '' # your evm private key
+  rpc: 'https://prod-common-api.bluwhale.com/node/api/heartbeat'
 
 logger:
-  level: info
-  maxFiles: 31
-  enableConsole: true
+  level: "info"
+  encoderType: "console"
+  outputType: "all"
+  maxAge: 30
+  enableColor: true
 
 ```
