@@ -1,7 +1,7 @@
 services:
   blu-node:
     container_name: blu-node
-    image: ghcr.io/blu-whale/blu-node:42799a3
+    image: ghcr.io/blu-whale/blu-node
     restart: always
     environment:
       - CONFIG_FILE_PATH=/app/conf.yaml
