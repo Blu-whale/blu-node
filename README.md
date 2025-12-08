@@ -8,11 +8,12 @@
     * Common Node: 500 (ve)BLUAI
 
 #### Hardware Requirements
-- CPU: Quad-core processor or higher (recommended 2.0GHz+ clock speed)
-- RAM: 4GB or more
-- Storage: At least 20GB free space (SSD recommended for faster data read/write)
-- Internet: Stable high-speed connection (10Mbps+ upload/download speed)
+- CPU: Dual-core processor or higher
+- RAM: 2GB or more
+- Storage: At least 10GB free space
+- Internet: Stable connection (5Mbps+ upload/download)
 - OS: Windows 10+, macOS 11+, or Linux (Ubuntu 20.04+)
+- Note: Higher specs may improve node performance and reward stability.
 
 #### Environment Requirements
 - docker
@@ -47,12 +48,11 @@ logger:
 
 ### Option 2: Run nodes on Chain (Coming Soon)
 #### Hardware Requirements
-- CPU: Dual-core processor or higher
-- RAM: 2GB or more
-- Storage: At least 10GB free space
-- Internet: Stable connection (5Mbps+ upload/download)
+- CPU: Quad-core processor or higher (recommended 2.0GHz+ clock speed)
+- RAM: 4GB or more
+- Storage: At least 20GB free space (SSD recommended for faster data read/write)
+- Internet: Stable high-speed connection (10Mbps+ upload/download speed)
 - OS: Windows 10+, macOS 11+, or Linux (Ubuntu 20.04+)
-- Note: Higher specs may improve node performance and reward stability.
 
 #### Environment Requirements
 - docker
