@@ -1,7 +1,7 @@
 # BluWhale node
 
 ## Node Operation Options
-### Option 1: Stake to Run
+### Option 1: Stake-To-Run
 * Operators need to stake the specified amount of (ve)BLUAI tokens to run the nodes.
 * Staking Requirements:
     * Master Node: 5,000 (ve)BLUAI
