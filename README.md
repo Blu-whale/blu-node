@@ -46,7 +46,7 @@ logger:
 ```
       
 
-### Option 2: Run nodes on Chain (Coming Soon)
+### Option 2: Run On Chain (Coming Soon)
 #### Hardware Requirements
 - CPU: Quad-core processor or higher (recommended 2.0GHz+ clock speed)
 - RAM: 4GB or more
