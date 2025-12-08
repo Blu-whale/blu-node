@@ -1,6 +1,16 @@
-## BluWhale node
+# BluWhale node
 
-### Hardware Requirements
+## Node Operation Options
+### Option 1: Stake to Run
+* Operators need to stake the specified amount of (ve)BLUAI tokens to run the nodes.
+* Staking Requirements:
+    * Master Node: 5,000 (ve)BLUAI
+    * Common Node: 500 (ve)BLUAI
+      
+
+### Option 2: Run nodes on Chain
+
+#### Hardware Requirements
 - CPU: Dual-core processor or higher
 - RAM: 2GB or more
 - Storage: At least 10GB free space
@@ -8,13 +18,13 @@
 - OS: Windows 10+, macOS 11+, or Linux (Ubuntu 20.04+)
 - Note: Higher specs may improve node performance and reward stability.
 
-### Environment Requirements
+#### Environment Requirements
 - docker
 - docker-compose
 - git
 - evm private key
 
-### Setup
+#### Setup
 ```bash
 git clone https://github.com/Blu-whale/blu-node.git
 cd blu-node
@@ -23,7 +33,7 @@ docker-compose up -d
 ```
 
 
-### Config File
+#### Config File
 ```yaml
 app:
   privateKey: '' # your evm private key
@@ -38,7 +48,7 @@ logger:
 
 ```
 
-### Gas Fee Estimation
+#### Gas Fee Estimation
 1. Transaction Frequency: Heartbeat transactions are sent at a fixed interval of 10 seconds per transaction.
 
 2. Per-Transaction Gas Fee Standard: Each heartbeat transaction consumes 2-3 BLUAI as gas fee. The exact amount fluctuates based on on-chain congestion and transaction byte size; it is recommended to use 2.5 BLUAI per transaction as the benchmark for calculation.
