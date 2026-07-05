@@ -23,6 +23,12 @@ vim conf/config.yaml # set your evm private key
 docker-compose up -d
 ```
 
+#### Network Tools
+- Explorer: https://explorer.bout.network/  
+  Use this to inspect blocks, transactions, addresses, and contract state on Bout Network.
+- Faucet: https://faucet.bout.network/  
+  Use this to claim test tokens before starting node operations or sending test transactions.
+
 #### Config File
 ```yaml
 app:
