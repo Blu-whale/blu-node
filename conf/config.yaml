@@ -1,9 +1,12 @@
 app:
+  contractAddress: '0xc66D32df5e3C7C692393E12e17CF66Eea9848e73'
   privateKey: ''
-  rpc: 'https://prod-common-api.bluwhale.com/node/api/heartbeat'
+  rpc: 'https://rpc.bout.network'
+  DataPath: './data/db/node.sqlite'
+  heartbeatBatchSize: 100
 
 logger:
-  level: "info"
+  level: "debug"
   encoderType: "console"
   outputType: "all"
   maxAge: 30

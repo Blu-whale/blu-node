@@ -1,52 +1,7 @@
 # BluWhale node
 
 ## Node Operation Options
-### Option 1: Stake-To-Run
-* Operators need to stake the specified amount of (ve)BLUAI tokens to run the nodes.
-* Staking Requirements:
-    * Master Node: 5,000 (ve)BLUAI
-    * Common Node: 500 (ve)BLUAI
-
-#### Hardware Requirements
-- CPU: Dual-core processor or higher
-- RAM: 2GB or more
-- Storage: At least 10GB free space
-- Internet: Stable connection (5Mbps+ upload/download)
-- OS: Windows 10+, macOS 11+, or Linux (Ubuntu 20.04+)
-- Note: Higher specs may improve node performance and reward stability.
-
-#### Environment Requirements
-- docker
-- docker-compose
-- git
-- evm private key
-
-#### Setup
-```bash
-git clone https://github.com/Blu-whale/blu-node.git
-cd blu-node
-vim conf/config.yaml # set your evm private key
-docker-compose up -d
-```
-
-
-#### Config File
-```yaml
-app:
-  privateKey: '' # your evm private key
-  rpc: 'https://prod-common-api.bluwhale.com/node/api/heartbeat'
-
-logger:
-  level: "info"
-  encoderType: "console"
-  outputType: "all"
-  maxAge: 30
-  enableColor: true
-
-```
-      
-
-### Option 2: Run On Chain (Coming Soon)
+### Run On Chain 
 #### Hardware Requirements
 - CPU: Quad-core processor or higher (recommended 2.0GHz+ clock speed)
 - RAM: 4GB or more
@@ -68,15 +23,17 @@ vim conf/config.yaml # set your evm private key
 docker-compose up -d
 ```
 
-
 #### Config File
 ```yaml
 app:
+  contractAddress: '0xc66D32df5e3C7C692393E12e17CF66Eea9848e73'
   privateKey: '' # your evm private key
-  rpc: 'https://prod-common-api.bluwhale.com/node/api/heartbeat'
+  rpc: 'https://rpc.bout.network'
+  DataPath: './data/db/node.sqlite'
+  heartbeatBatchSize: 100
 
 logger:
-  level: "info"
+  level: "debug"
   encoderType: "console"
   outputType: "all"
   maxAge: 30
