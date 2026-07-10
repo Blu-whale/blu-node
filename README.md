@@ -32,7 +32,7 @@ docker-compose up -d
 #### Config File
 ```yaml
 app:
-  contractAddress: '0xc66D32df5e3C7C692393E12e17CF66Eea9848e73'
+  contractAddress: '0xc550800B438809EfA0301f82dB45E5489025C010'
   privateKey: '' # your evm private key
   rpc: 'https://rpc.bout.network'
   DataPath: './data/db/node.sqlite'
